@@ -2,7 +2,7 @@
 Set of scripts for generating bash files for use with slurm
 
 
-##**snippy_pipeline_sbatch_local**
+## **snippy_pipeline_sbatch_local**
 Python script to generate snippy commands for local fastq files which can then be used with slurm
 <br>
 Need to supply a tab delimited file with the required information and you can see an example of this in examples/snippy_pipeline_sbatch_local.txt
