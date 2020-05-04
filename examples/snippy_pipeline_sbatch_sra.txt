@@ -1,0 +1,4 @@
+sample_id	fastq_dir	outdir	reference
+SRR2965752	/home/jrobertson/fastq/	/home/jrobertson/snippy_analyses/SRR2965752	/home/jrobertson/snippy_references/CP011591.fasta
+SRR3112260	/home/jrobertson/fastq/	/home/jrobertson/snippy_analyses/SRR3112260	/home/jrobertson/snippy_references/CP011591.fasta
+SRR3465532	/home/jrobertson/fastq/	/home/jrobertson/snippy_analyses/SRR3465532	/home/jrobertson/snippy_references/CP011591.fasta

@@ -1,0 +1,4 @@
+sample_id	fwd	rev	outdir	reference
+SRR2965752	/home/jrobertson/fastq/SRR2965752_1.fastq	/home/jrobertson/fastq/SRR2965752_2.fastq	/home/jrobertson/snippy_analyses/SRR2965752	/home/jrobertson/snippy_references/CP011591.fasta
+SRR3112260	/home/jrobertson/fastq/SRR3112260_1.fastq	/home/jrobertson/fastq/SRR3112260_2.fastq	/home/jrobertson/snippy_analyses/SRR3112260	/home/jrobertson/snippy_references/CP011591.fasta
+SRR3465532	/home/jrobertson/fastq/SRR3465532_1.fastq	/home/jrobertson/fastq/SRR3465532_2.fastq	/home/jrobertson/snippy_analyses/SRR3465532	/home/jrobertson/snippy_references/CP011591.fasta
