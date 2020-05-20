@@ -49,7 +49,7 @@ def main():
         if not nocleanup:
             bash_string += "rm {}".format(fwd_read)
             bash_string += "rm {}".format(rev_read)
-        print(bash_string)
+
         target = open(os.path.join(jobs_out,"{}.sh".format(sample_id)), 'w')
         target.write(bash_string)
         target.close()
