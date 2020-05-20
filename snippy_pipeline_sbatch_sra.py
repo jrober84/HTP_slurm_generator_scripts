@@ -47,8 +47,8 @@ def main():
         rev_read = os.path.join(fastq_dir, "{}_2.fastq".format(sample_id))
         bash_string += "snippy --prefix {} --outdir {} --ref {} --R1 {} --R2 {} --quiet {}\n".format(sample_id,snippy_dir,reference_file,fwd_read,rev_read,parameters)
         if not nocleanup:
-            bash_string += "rm {}".format(fwd_read)
-            bash_string += "rm {}".format(rev_read)
+            bash_string += "rm {}\n".format(fwd_read)
+            bash_string += "rm {}\n".format(rev_read)
 
         target = open(os.path.join(jobs_out,"{}.sh".format(sample_id)), 'w')
         target.write(bash_string)
