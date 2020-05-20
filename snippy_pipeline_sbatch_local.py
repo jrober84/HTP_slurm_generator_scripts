@@ -31,7 +31,7 @@ def main():
                               names=['sample_id','fwd_read','rev_read','outdir','reference'],header=0)
 
 
-    parameters = "--num_cpus {} ".format( args.num_cpus )
+    parameters = "--cpus {} ".format( args.num_cpus )
     force = args.force
     if force:
         parameters += "--force "

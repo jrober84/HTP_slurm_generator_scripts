@@ -25,7 +25,7 @@ def main():
     sample_info = pd.read_csv(args.input, sep='\t', index_col='sample_id',
                               names=['sample_id','fastq_dir','outdir','reference'],header=0)
     jobs_out = args.outdir
-    parameters = "--num_cpus {} ".format( args.num_cpus)
+    parameters = "--cpus {} ".format( args.num_cpus)
     force = args.force
     if force:
         parameters += "--force "
