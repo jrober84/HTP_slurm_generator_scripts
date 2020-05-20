@@ -24,7 +24,7 @@ def main():
 
     sample_info = pd.read_csv(args.input, sep='\t', index_col='sample_id',
                               names=['sample_id','fastq_dir','outdir','reference'],header=0)
-
+    jobs_out = args.outdir
     parameters = "--num_cpus {} ".format( args.num_cpus)
     force = args.force
     if force:
@@ -50,7 +50,7 @@ def main():
             bash_string += "rm {}".format(fwd_read)
             bash_string += "rm {}".format(rev_read)
         print(bash_string)
-        target = open(os.path.join(outdir,"{}.sh".format(sample_id)), 'w')
+        target = open(os.path.join(jobs_out,"{}.sh".format(sample_id)), 'w')
         target.write(bash_string)
         target.close()
 
